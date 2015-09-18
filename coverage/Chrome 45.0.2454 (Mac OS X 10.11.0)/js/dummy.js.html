@@ -12,13 +12,13 @@
     </style>
 </head>
 <body>
-<div class="header low">
+<div class="header high">
     <h1>Code coverage report for <span class="entity">js/dummy.js</span></h1>
     <h2>
-        Statements: <span class="metric">12% <small>(3 / 25)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Branches: <span class="metric">0% <small>(0 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Functions: <span class="metric">0% <small>(0 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
-        Lines: <span class="metric">14.29% <small>(3 / 21)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Statements: <span class="metric">88% <small>(22 / 25)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">50% <small>(4 / 8)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">80% <small>(4 / 5)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">90.48% <small>(19 / 21)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
     <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">js/</a> &#187; dummy.js</div>
@@ -80,36 +80,36 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -123,37 +123,37 @@ controller('MyCtrl1', ['$scope', <span class="fstat-no" title="function not cove
 }])
 &nbsp;
 //view2
-.controller('MyCtrl2', ['$scope', <span class="fstat-no" title="function not covered" >function($scope) {</span>
-<span class="cstat-no" title="statement not covered" >  $scope.test2 = <span class="fstat-no" title="function not covered" >function() {</span></span>
-<span class="cstat-no" title="statement not covered" >    return 'Hello!';</span>
+.controller('MyCtrl2', ['$scope', function($scope) {
+  $scope.test2 = function() {
+    return 'Hello!';
   };
 }]);
 &nbsp;
 // Dummy controller for testing
 myApp.
-controller('MyCtrl1', ['$scope', '$location', <span class="fstat-no" title="function not covered" >function($scope, $location) {</span>
-<span class="cstat-no" title="statement not covered" >  $scope.test1 = 'EFG';</span>
+controller('MyCtrl1', ['$scope', '$location', function($scope, $location) {
+  $scope.test1 = 'EFG';
 &nbsp;
   // Get the first sentence and rest
-<span class="cstat-no" title="statement not covered" >  $scope.getFirstAndRestSentence = <span class="fstat-no" title="function not covered" >function($string) {</span></span>
-<span class="cstat-no" title="statement not covered" >    var head = $string;</span>
-<span class="cstat-no" title="statement not covered" >    var desc = "";</span>
+  $scope.getFirstAndRestSentence = function($string) {
+    var head = $string;
+    var desc = "";
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var separators = ['.', '?', '\n'];</span>
+    var separators = ['.', '?', '\n'];
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var firstIndex = -1;</span>
-<span class="cstat-no" title="statement not covered" >    for (var i in separators) {</span>
-<span class="cstat-no" title="statement not covered" >      var index = $string.indexOf(separators[i]);</span>
-<span class="cstat-no" title="statement not covered" >      if (index == -1) <span class="cstat-no" title="statement not covered" >continue;</span></span>
-<span class="cstat-no" title="statement not covered" >      if (firstIndex == -1) {<span class="cstat-no" title="statement not covered" >firstIndex = index; <span class="cstat-no" title="statement not covered" ></span>continue;}</span></span>
+    var firstIndex = -1;
+    for (var i in separators) {
+      var index = $string.indexOf(separators[i]);
+      if (index == -1) continue;
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (firstIndex == -1) {firstIndex = index; continue;}
 <span class="cstat-no" title="statement not covered" >      if (firstIndex &gt; index) {<span class="cstat-no" title="statement not covered" >firstIndex = index;}</span></span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (firstIndex !=-1) {</span>
-<span class="cstat-no" title="statement not covered" >      head = $string.slice(0, firstIndex+1);</span>
-<span class="cstat-no" title="statement not covered" >      desc = $string.slice(firstIndex+1);</span>
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (firstIndex !=-1) {
+      head = $string.slice(0, firstIndex+1);
+      desc = $string.slice(firstIndex+1);
     }
-<span class="cstat-no" title="statement not covered" >    return [head, desc];</span>
+    return [head, desc];
   };
 &nbsp;
 }]);
@@ -162,7 +162,7 @@ controller('MyCtrl1', ['$scope', '$location', <span class="fstat-no" title="func
 
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Sep 18 2015 10:04:50 GMT+0800 (HKT)</div>
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Fri Sep 18 2015 11:56:34 GMT+0800 (HKT)</div>
 </div>
 <script src="../prettify.js"></script>
 <script>
