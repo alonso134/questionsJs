@@ -20,7 +20,6 @@ module.exports = function(config) {
       'js/lib/*.js',
       'js/*.js',
       'js/**/*.js',
-
       'test/unit/*.js'
     ],
 
