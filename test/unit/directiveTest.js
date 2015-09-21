@@ -46,7 +46,7 @@ describe('todoEscape directive', function () {
     }));
  
     it('should escape', function () {
-        var el = angular.element('<input todo-escape="escape">');
+        var el = angular.element('<input todo-blur="escape">');
         var element = compile(el)(scope);
  
             element.triggerHandler({type: 'keydown', keyCode: 65});
